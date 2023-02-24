@@ -1,0 +1,20 @@
+<section class="container mt-5">
+    <div class="row">
+
+    <div class="col-md-10 mx-auto"> 
+       {{#each products}}
+        <div class="card card-body my-2 shadow">
+            <div class="d-flex align-items-center align-items-lg-start text-lg-left flex-column flex-lf-row">
+                <a href="/products/{{id}}">
+                    <img src="{{imageUrl}}" alt="" width="160" height="160" style="object-fit: contain;">
+                </a>
+            </div>
+        </div>
+
+       {{else}}
+        <h5 class="text-center"> No Products, Add one !</h5>
+       {{/each}}
+
+    </div>       
+    </div>
+</section>
