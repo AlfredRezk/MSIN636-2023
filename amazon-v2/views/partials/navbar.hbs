@@ -1,0 +1,66 @@
+<nav
+  class="navbar navbar-expand-md navbar-dark d-none d-md-block bg-dark"
+>
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <h3>Amazon</h3>
+    </a>
+
+    <form action="" class="w-100" style="flex:1">
+      <div class="input-group w-100">
+        {{! Drop down menu }}
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            All
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Laptops</a></li>
+            <li><a class="dropdown-item" href="#">Electronics</a></li>
+            <li><a class="dropdown-item" href="#">Other</a></li>
+          </ul>
+        </div>
+        <input type="text" id="search-field" class="form-control" />
+        <button class="btn bg-main"> <i class="fas fa-search"></i></button>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<nav
+  class="navbar navbar-expand-md navbar-dark   bg-dark"
+  style="background-color: #232F3E"
+>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+<div class="container">
+
+  <div class="collapse navbar-collapse" id="mynav">
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-5"> 
+            <a href="/" class="nav-link  {{#if productsActive}} active{{/if}}">Products</a>
+        </li>
+        <li class="nav-item mx-5"> 
+            <a href="/cart" class="nav-link {{#if cartActive}} active{{/if}}">Cart</a>
+        </li>
+        <li class="nav-item mx-5"> 
+            <a href="/orders" class="nav-link {{#if ordersActive}} active{{/if}}">Orders</a>
+        </li>
+        <li class="nav-item mx-5"> 
+            <a href="/admin/add-product" class="nav-link {{#if addProductActive}} active{{/if}}">Add Product</a>
+        </li>
+        <li class="nav-item mx-5"> 
+            <a href="/admin/products" class="nav-link {{#if adminProductsActive}} active{{/if}}">Admin Products</a>
+        </li>
+    </ul>
+  </div>
+
+</div>
+
+</nav>
