@@ -1,0 +1,13 @@
+Admin routes 
+/add-product    + GET       => View the add form 
+/add-product    + POST      => process the product and store it 
+/products       +  GET       => GET All products 
+/edit-product/:id + GET     => view of edit form 
+/edit-product     + POST    => To process editiong the product 
+/delete-product   + POST    => DELETE PRODUCT 
+
+
+
+Products routes 
+/               + GET        => All products 
+/products/:id   + GET        => Get Product details 

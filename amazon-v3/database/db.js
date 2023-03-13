@@ -1,0 +1,1 @@
+const dbUrl = `mongodb+srv://alfred:alfred00@cluster0.tlnqpjk.mongodb.net/amazon`;

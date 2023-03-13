@@ -1,0 +1,16 @@
+nav.navbar{
+    background-color: #131921;
+}
+.bg-main{
+    background-color: #FEBD69;
+}
+
+.navbar-brand>h3{
+    color: #FEBD69;
+}
+#search-field{
+    border-radius: 0px;
+}
+
+
+

@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-5 mb-2">
+        <img src="{{product.imageUrl}}" alt="" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+        <h4>{{product.title}}</h4>
+        <p> <span class="text-muted">Price: </span> <span class="text-danger h4">${{product.price}}</span></p>
+        <hr>
+        {{{product.desc}}}
+    </div>
+    <div class="col-md-3">
+        <div class="card card-body text-left">
+            <p class="h4 text-center">Price: <span class="text-danger">{{product.price}}</span></p>
+            <p class="m-0 mt-3 text-muted">Free shipping</p>
+            <p class="m-0 mt-3 text-muted">Free Return</p>
+            <p class="m-0 mt-3 text-muted">Secure Transactions</p>
+        <form>
+            <button type="submit" class="btn btn-warning mt-4 text-light"> 
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+        </form>
+        </div>
+    </div>
+</div>
